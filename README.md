@@ -1,4 +1,7 @@
 P0 Interactive web page that connects to an external API
+
+Due: 5/3
+
 Requirements 
 GIT
 Github repo that contains braches for invididual work -- COMPLETE
