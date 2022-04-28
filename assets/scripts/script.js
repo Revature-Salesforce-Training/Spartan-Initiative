@@ -4,6 +4,7 @@
 // This an a weather API able to show todays weather
 
 //Begin fetch for weather API
+//aebe658949ac3fc12a2499a950e9c91a
 fetch('https://api.openweathermap.org/data/2.5/weather?lat=40.302332124&lon=-111.754663648&appid=ADD-KEY-HERE')
     .then((res) =>{
         return res.json();

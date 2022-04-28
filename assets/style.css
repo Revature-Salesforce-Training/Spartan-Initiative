@@ -84,7 +84,7 @@ th, td {
     border: 1px solid black;
 }
 #date, #temp, #feel, #current {
-    font-size: 1rem;
+    font-size: 2rem;
 }
 
 footer{
