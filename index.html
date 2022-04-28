@@ -1,8 +1,8 @@
 <!--
     Author: Trenton Teasdale
     Created: 4/27/22
-    Last Modified: 
-    This an a weather API able to show todays weather and upcoming weather
+    Last Modified: 5/1/22
+    This an a weather API able to show todays weather
 -->
 
 <!DOCTYPE html>
@@ -22,14 +22,18 @@
         <img src="./assets/images/BOI.png">
         <div>
             <h1>Weather BOI</h1>
-            <h2>The Weather of Tomorrow - Today!</h2>
+            <h2>The Weather of Today - Today!</h2>
         </div>
     </header>
     <!--Start of main conatiner-->
     <div class="container">
         <div class="daily">
-            <div>one</div>
-            <img src="./assets/images/BOI.png">
+            <div id="current">
+                
+            </div>
+            <div id="weather">
+                <!-- <img src="./assets/images/BOI.png"> -->
+            </div>
             <div class="dayInfo">
                 <table>
                     <thead>
@@ -40,19 +44,19 @@
                             Temp
                         </th>
                         <th>
-                            Status
+                            Feels Like
                         </th>
                     </thead>
                     <tbody>
                         <tr>
-                            <td>
-                                xx/xx/xx
+                            <td id="date">
+                                <!--Date will insert here-->
                             </td>
-                            <td>
-                                12deg
+                            <td id="temp">
+                                <!-- Temp will insert here -->
                             </td>
-                            <td>
-                                Cloudy
+                            <td id="feel">
+                                <!-- Feels like temp will insert here -->
                             </td>
                         </tr>
                     </tbody>

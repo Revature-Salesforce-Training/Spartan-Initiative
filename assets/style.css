@@ -49,15 +49,16 @@ q:before, q:after {
 }
 table {
 	border-collapse: collapse;
-	border-spacing: 0;
+	border-spacing: 10%;
 }
 header {
     display: flex;
     align-items: center;
     position: absolute;
+    width: 100%;
 }
 header img {
-    width: 10%;
+    width: 5%;
 }
 h1 {
     font-size: 3rem;
@@ -78,14 +79,33 @@ h2 {
     justify-content: space-around;
     width: 100%;
 }
+th, td {
+    padding: .5rem;
+    border: 1px solid black;
+}
+#date, #temp, #feel, #current {
+    font-size: 1rem;
+}
 
 footer{
     position: absolute;
     bottom: 0;
     width: 100%;
-    background-color: #146fa3;
+    background-color: #0093E9;
     height: 2rem;
     display: flex;
     justify-content: flex-end;
     align-items: center;
 }
+
+@media only screen and (max-width: 600px) {
+    header img {
+        width: 20%;
+    }
+    h1 {
+        font-size: 2rem;
+    }
+    .daily {
+      flex-direction: column;
+    }
+  }
