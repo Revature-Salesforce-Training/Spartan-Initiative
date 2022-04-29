@@ -56,9 +56,15 @@ header {
     align-items: center;
     position: absolute;
     width: 100%;
+    justify-content: space-between;
 }
 header img {
-    width: 5%;
+    width: 15%;
+    height: 15%;
+    padding-right:1rem;
+}
+.left {
+    display: flex;
 }
 h1 {
     font-size: 3rem;
@@ -66,12 +72,16 @@ h1 {
 h2 {
     font-size: 1rem;
 }
+.location {
+    transform: translateX(-10px);
+}
 .container{
     display: flex;
     align-items: center;
     text-align: center;
     justify-content: center;
     min-height: 100vh;
+    flex-direction: column;
 }
 .daily{
     display: flex;
@@ -79,14 +89,29 @@ h2 {
     justify-content: space-around;
     width: 100%;
 }
+.forecast {
+    display: flex;
+    justify-content: space-evenly;
+    position: absolute;
+    bottom: 10%;
+    width: 100%;
+}
+.currentInfo {
+    color: white;
+    font-weight: 900;
+    font-size: 1.5rem;
+    vertical-align: middle;
+}
 th, td {
     padding: .5rem;
     border: 1px solid black;
 }
-#date, #temp, #feel, #current {
-    font-size: 2rem;
+#date, #temp, #feel {
+    font-size: 1rem;
 }
-
+input{
+    width: 100px;
+}
 footer{
     position: absolute;
     bottom: 0;
