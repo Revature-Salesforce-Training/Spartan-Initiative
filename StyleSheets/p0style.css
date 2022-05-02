@@ -1,0 +1,85 @@
+h2{
+    font-size: larger;
+    color: green;
+}
+
+div{
+    color: white;
+    font-size: 20px;
+}
+
+html{
+    background-image: url(../images/star\ field.jpeg);
+    height: 1000px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: blue;
+    color: white;
+    align-items: center;
+    
+
+}
+
+head{
+    font-size: 1000px;
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#splash{
+    height: 100vh;
+    width: 100vw;
+    background-color: darkorange;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+}
+
+header{
+    display: flex;
+    text-align: center;
+
+    width: 100px;
+
+    
+}
+
+
+
+.planetssection button{
+    border-radius: 20px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+.planetssection button:hover {
+    cursor: pointer;
+}
+
+button:hover{
+    cursor: pointer;
+    color: green;
+}
+
+.App {
+    flex-direction: column;
+}
+
+.DisplaySection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+table, th, td, tr{
+    background-color: darkgreen;
+    border-color: yellow;
+    border-radius: 30px;
+    color: white;
+    text-align: center;
+    width: max-content;
+
+}
