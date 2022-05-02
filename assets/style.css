@@ -122,6 +122,9 @@ footer{
     justify-content: flex-end;
     align-items: center;
 }
+footer a {
+    padding-right: 5rem;
+}
 
 @media only screen and (max-width: 600px) {
     header img {

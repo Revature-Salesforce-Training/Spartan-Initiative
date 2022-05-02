@@ -1,6 +1,6 @@
 // Author: Trenton Teasdale
 // Created: 4/27/22
-// Last Modified: 5/1/22
+// Last Modified: 5/2/22
 // This an a weather API able to show todays weather
 
 //Begin fetch for weather API
@@ -130,17 +130,33 @@ function k2f(kelvin) {
     return fahrenheit + '\u2109';
 }
 function f2c(){
-    let tempIds = ['temp','feel','temp1','temp2','temp3','temp4']
+    let tempIds = ['temp','feel','temp1','temp2','temp3','temp4'];
     for(i=0;i<tempIds.length; i++){
         let idItem = document.getElementById(tempIds[i]);
         farTemp = Number.parseInt(idItem.innerHTML);
         let celcius = Math.round((farTemp - 32)*(5/9));
         idItem.innerHTML = celcius + '\u2103';
     }
+    celciusButton.innerHTML = '\u2109';
 }
+function c2f(){
+    let tempIds = ['temp','feel','temp1','temp2','temp3','temp4'];
+    for(i=0;i<tempIds.length; i++){
+        let idItem = document.getElementById(tempIds[i]);
+        celTemp = Number.parseInt(idItem.innerHTML);
+        let far = Math.round((celTemp * (9/5))+32);
+        idItem.innerHTML = far + '\u2109';
+    }
+    celciusButton.innerHTML = '\u2103';
+}
+//find celcius button and determine which conversion type
 const celciusButton = document.getElementById('cel');
     celciusButton.addEventListener('click', ()=>{
-        f2c();
+        if (document.getElementById('cel').innerHTML == '\u2103'){
+            f2c();
+        } else {
+            c2f();
+        }
     })
 
 //get weather ID to get the weather icon from api as well
