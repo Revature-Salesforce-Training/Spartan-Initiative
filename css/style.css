@@ -58,16 +58,12 @@ a:active {
 }
 
 table {
+    display: none;
     text-align: center;
 }
 
 .selections {
     display: inline-block;
-}
-
-#results {
-    display: flex;
-    justify-content: center;
 }
 
 @media (min-width: 1280px) {

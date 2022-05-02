@@ -7,9 +7,11 @@
 let boxes = document.getElementsByClassName('checkBoxes');
 addListenersToCollection(boxes);
 let resultsBody = document.querySelector('#resultsBody');
+let table = document.querySelector('#resultsTable');
 
 async function getKontests () {
     resultsBody.innerHTML = '';
+    table.style.display = 'block';
     let results = await fetch(`https://kontests.net/api/v1/all`);
     let kontests = await results.json();
     for (let box of boxes) {
@@ -63,7 +65,7 @@ function rowAdder(element) {
 
 function clearBoxes() {
     for (let box of boxes) {
-        box.checked = flase;
+        box.checked = false;
     }
 }
 
