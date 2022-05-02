@@ -37,7 +37,7 @@ header {
 }
 
 h1 {
-    font-size: 4em;
+    font-size: 8vw;
     font-family:'Roboto Mono', Courier, monospace;
     display: flex;
     justify-content: center;
@@ -53,7 +53,7 @@ table {
 }
 
 #logo {
-    height: 10em;
+    height: 15vw;
     border-radius: 30%;
 }
 
@@ -64,4 +64,14 @@ p {
 #results {
     display: flex;
     justify-content: center;
+}
+
+@media (min-width: 1280px) {
+    #logo {
+        height: 10em;
+    }
+
+    h1 {
+        font-size: 5em;
+    }
 }

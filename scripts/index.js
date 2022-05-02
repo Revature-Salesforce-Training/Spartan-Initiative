@@ -4,7 +4,6 @@
     description: p0 Javascript
 */
 
-
 let boxes = document.getElementsByClassName('checkBoxes');
 addListenersToCollection(boxes);
 let resultsBody = document.querySelector('#resultsBody');
