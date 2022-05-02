@@ -9,16 +9,24 @@
 let city = 'orem';
 let state = 'utah';
 
-function getAPI() {
-    let request = 'https://api.openweathermap.org/data/2.5/forecast?q='+city+','+state+'&appid=KEYGOESHERE';
+async function getAPI() {
+    let request = 'https://api.openweathermap.org/data/2.5/forecast?q='+city+','+state+'&appid=KEYHERE';
 
-    fetch(request)
-    .then((res) =>{
-        return res.json();
-    })
-    .then((info) => {
-        
-        data= info.list[0];
+    let fetchResult = await fetch(request);
+    let receivedRequest = await fetchResult;
+    let finalresult = await receivedRequest.json();
+    try {
+        build(finalresult);
+        forecast(finalresult);
+    } catch(e){
+        console.log(e);
+        alert('Uh oh unable to get the current weather for your area, please check your location information and try again');
+    }
+}
+getAPI();
+
+function build(info) {
+    data= info.list[0];
         console.log(data);
         //add city name
         let currentCity = document.getElementById('currentCity');
@@ -41,7 +49,7 @@ function getAPI() {
         let temp = document.getElementById('temp');
         //Temp comes in as kelvin and needs to be converted to F
         let kelvin = data.main.temp;
-        let fahrenheit = Math.round(1.8*(kelvin - 273) + 32);
+        let fahrenheit = k2f(kelvin);
         temp.innerHTML = '';
         temp.append(fahrenheit);
 
@@ -49,45 +57,39 @@ function getAPI() {
         let tempFeel = document.getElementById('feel');
         let feel = data.main.feels_like;
         //conversion
-        feel = Math.round(1.8*(feel - 273) + 32);
+        feel = k2f(feel);
         tempFeel.innerHTML= '';
         tempFeel.append(feel);
-        return info;
-    })
-    .then((data) => {
- //       begin forecast info
-       let week = document.querySelectorAll('.day');
-       for(i=1;i<week.length+1;i++){
-           let day = data.list[i];
-
-           //weather status
-           let forecastWeather = document.getElementById('weather'+i);
-           foreWeather = day.weather[0];
-           forecastWeather.innerText = foreWeather.description;
-
-           //forecast date
-           const date = new Date();
-           let updatedDate = newDate(date, i)
-           let domDate = document.querySelector('#date'+i);
-           domDate.innerText = updatedDate;
-
-           //forecast temp
-           let temp = document.querySelector('#temp'+i);
-           dayTemp = day.main.temp;
-           dayTemp = k2f(dayTemp);
-           temp.innerText = dayTemp;
-
-           //weather icon
-           let iconId = ('icon'+i);
-           getIcon(foreWeather.icon, iconId);
-
-       }
-    })
-    .catch(() => {
-        alert('Uh oh unable to get the current weather for your area please check your location information and try again')
-    })
 }
-getAPI();
+function forecast(data){
+     //       begin forecast info
+     let week = document.querySelectorAll('.day');
+     for(i=1;i<week.length+1;i++){
+         let day = data.list[i];
+
+         //weather status
+         let forecastWeather = document.getElementById('weather'+i);
+         foreWeather = day.weather[0];
+         forecastWeather.innerText = foreWeather.description;
+
+         //forecast date
+         const date = new Date();
+         let updatedDate = newDate(date, i)
+         let domDate = document.querySelector('#date'+i);
+         domDate.innerText = updatedDate;
+
+         //forecast temp
+         let temp = document.querySelector('#temp'+i);
+         dayTemp = day.main.temp;
+         dayTemp = k2f(dayTemp);
+         temp.innerText = dayTemp;
+
+         //weather icon
+         let iconId = ('icon'+i);
+         getIcon(foreWeather.icon, iconId);
+
+     }
+}
 
 //Start with getting date for today and put it in en-US format
 function setDate() {
@@ -125,13 +127,25 @@ function newLocation() {
 //temp conversion 
 function k2f(kelvin) {
     let fahrenheit = Math.round(1.8*(kelvin - 273) + 32);
-    return fahrenheit;
+    return fahrenheit + '\u2109';
 }
+function f2c(){
+    let tempIds = ['temp','feel','temp1','temp2','temp3','temp4']
+    for(i=0;i<tempIds.length; i++){
+        let idItem = document.getElementById(tempIds[i]);
+        farTemp = Number.parseInt(idItem.innerHTML);
+        let celcius = Math.round((farTemp - 32)*(5/9));
+        idItem.innerHTML = celcius + '\u2103';
+    }
+}
+const celciusButton = document.getElementById('cel');
+    celciusButton.addEventListener('click', ()=>{
+        f2c();
+    })
 
 //get weather ID to get the weather icon from api as well
 
 function getIcon(iconCode, Id) {
-    console.log('run count')
     let iconUrl = 'https://openweathermap.org/img/wn/' +iconCode +'@2x.png';
     fetch(iconUrl)
     .then((arg) => {
@@ -142,3 +156,83 @@ function getIcon(iconCode, Id) {
         weatherImg.append(wIcon);
     })
 }
+
+//UNUSED CODE
+// function getAPI() {
+//     let request = 'https://api.openweathermap.org/data/2.5/forecast?q='+city+','+state+'&appid=aebe658949ac3fc12a2499a950e9c91a';
+
+    // fetch(request)
+    // .then((res) =>{
+    //     return res.json();
+    // })
+    // .then((info) => {
+        
+        // data= info.list[0];
+        // console.log(data);
+        // //add city name
+        // let currentCity = document.getElementById('currentCity');
+        // currentCity.innerText = city
+
+        // //weather type secelector for API data
+        // let weather = data.weather[0];
+        // let weatherIcon = weather.icon;
+        // let wId = 'weather';
+        // getIcon(weatherIcon, wId);
+
+
+        // weather = weather.description;
+        // //append weather status to current section in HTML
+        // let current =document.getElementById('current');
+        // current.innerHTML = '';
+        // current.append(weather);
+
+        // //add tempurature
+        // let temp = document.getElementById('temp');
+        // //Temp comes in as kelvin and needs to be converted to F
+        // let kelvin = data.main.temp;
+        // let fahrenheit = Math.round(1.8*(kelvin - 273) + 32);
+        // temp.innerHTML = '';
+        // temp.append(fahrenheit);
+
+        // //adding feels like temp
+        // let tempFeel = document.getElementById('feel');
+        // let feel = data.main.feels_like;
+        // //conversion
+        // feel = Math.round(1.8*(feel - 273) + 32);
+        // tempFeel.innerHTML= '';
+        // tempFeel.append(feel);
+        // return info;
+    // })
+    // .then((data) => {
+//  //       begin forecast info
+//        let week = document.querySelectorAll('.day');
+//        for(i=1;i<week.length+1;i++){
+//            let day = data.list[i];
+
+//            //weather status
+//            let forecastWeather = document.getElementById('weather'+i);
+//            foreWeather = day.weather[0];
+//            forecastWeather.innerText = foreWeather.description;
+
+//            //forecast date
+//            const date = new Date();
+//            let updatedDate = newDate(date, i)
+//            let domDate = document.querySelector('#date'+i);
+//            domDate.innerText = updatedDate;
+
+//            //forecast temp
+//            let temp = document.querySelector('#temp'+i);
+//            dayTemp = day.main.temp;
+//            dayTemp = k2f(dayTemp);
+//            temp.innerText = dayTemp;
+
+//            //weather icon
+//            let iconId = ('icon'+i);
+//            getIcon(foreWeather.icon, iconId);
+
+//        }
+//     })
+//     .catch(() => {
+//         alert('Uh oh unable to get the current weather for your area please check your location information and try again');
+//     })
+// }
