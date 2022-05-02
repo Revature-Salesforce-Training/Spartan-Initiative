@@ -48,6 +48,10 @@ h2 {
     font-size: 2em;
 }
 
+table {
+    text-align: center;
+}
+
 #logo {
     height: 10em;
     border-radius: 30%;

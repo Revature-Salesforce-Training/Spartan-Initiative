@@ -3,6 +3,14 @@
     updated: 5/2/22
     description: p0 Javascript
 */
+// function callGetKontests {
+//     try {
+//         getKontests();
+//     } catch (error) {
+//         alert("Please select something from the list.");
+//     }
+// }
+
 
 getKontests();
 
@@ -21,7 +29,7 @@ async function getKontests () {
             
             let contestName = element.name;
             let contestStart = element.start_time;
-            contestStart = contestStart.slice(0, 11);
+            contestStart = contestStart.slice(0, 10);
             let seconds = element.duration;
             let minutes = seconds / 60;
             let hours = Math.round(minutes / 60);
