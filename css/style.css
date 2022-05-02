@@ -1,0 +1,63 @@
+/*
+    author: Matt McCain
+    updated: 4/27/22
+    description: code along home page
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
+:root {
+    --mainDarkColor: hsl(238, 68%, 10%);
+    --mainLightColor: hsl(52, 46%, 90%);
+}
+
+body {
+    background-color: var(--mainDarkColor);
+    color: var(--mainLightColor);
+    width: 80%;
+    margin: auto;
+}
+
+a, a:link, a:visited {
+    color: white;
+}
+
+a:hover {
+    color: red;
+}
+
+a:active {
+    color:yellowgreen;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+}
+
+h1 {
+    font-size: 4em;
+    font-family:'Roboto Mono', Courier, monospace;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+#logo {
+    height: 10em;
+    border-radius: 30%;
+}
+
+p {
+    margin-right: 20%;
+}
+
+#results {
+    display: flex;
+    justify-content: center;
+}
