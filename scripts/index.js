@@ -62,6 +62,11 @@ function rowAdder(element) {
     resultsBody.appendChild(newRow);
 }
 
+function clearBoxes() {
+    for (let box of boxes) {
+        box.checked = flase;
+    }
+}
 
 function addListenersToCollection(listeners) {
     for (let item of listeners) {
