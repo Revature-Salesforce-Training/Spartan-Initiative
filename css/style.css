@@ -18,6 +18,33 @@ body {
     margin: auto;
 }
 
+h1 {
+    font-size: 8vw;
+    font-family:'Roboto Mono', Courier, monospace;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+
+h2 {
+    font-size: 4vw;
+}
+
+p {
+    margin-right: 20%;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+}
+
+#logo {
+    height: 15vw;
+    border-radius: 30%;
+}
+
 a, a:link, a:visited {
     color: white;
 }
@@ -30,35 +57,12 @@ a:active {
     color:yellowgreen;
 }
 
-header {
-    display: flex;
-    flex-direction: row;
-    margin-top: 20px;
-}
-
-h1 {
-    font-size: 8vw;
-    font-family:'Roboto Mono', Courier, monospace;
-    display: flex;
-    justify-content: center;
-    margin: auto;
-}
-
-h2 {
-    font-size: 2em;
-}
-
 table {
     text-align: center;
 }
 
-#logo {
-    height: 15vw;
-    border-radius: 30%;
-}
-
-p {
-    margin-right: 20%;
+.selections {
+    display: inline-block;
 }
 
 #results {
@@ -73,5 +77,9 @@ p {
 
     h1 {
         font-size: 5em;
+    }
+
+    h2 {
+        font-size: 3em;
     }
 }
