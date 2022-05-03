@@ -4,11 +4,15 @@
     description: p0 Javascript
 */
 
+// Retrieve elements
 let boxes = document.getElementsByClassName('checkBoxes');
-addListenersToCollection(boxes);
 let resultsBody = document.querySelector('#resultsBody');
 let table = document.querySelector('#resultsTable');
 
+// Add listeners
+addListenersToCollection(boxes);
+
+// Fetch list of upcoming contests
 async function getKontests () {
     resultsBody.innerHTML = '';
     table.style.display = 'block';
@@ -26,6 +30,7 @@ async function getKontests () {
     }
 }
 
+// Insert given element into table
 function rowAdder(element) {
     let newRow = document.createElement('tr');
     let resultsBody = document.querySelector('#resultsBody');
@@ -63,12 +68,7 @@ function rowAdder(element) {
     resultsBody.appendChild(newRow);
 }
 
-function clearBoxes() {
-    for (let box of boxes) {
-        box.checked = false;
-    }
-}
-
+// add event listener to all checkboxes
 function addListenersToCollection(listeners) {
     for (let item of listeners) {
         item.addEventListener('click', getKontests);
