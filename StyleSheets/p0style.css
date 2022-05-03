@@ -6,14 +6,23 @@ h2{
 div{
     color: white;
     font-size: 20px;
+float: right;
+    align-items: right;
+
+    align-content: center;
+flex-direction: column;
+margin: 0, auto;
+display: flex;
+flex-direction: right;
+justify-content: space-around;
+align-items: right;
 }
 
 html{
     background-image: url(../images/star\ field.jpeg);
     height: 1000px;
     background-size: cover;
-    background-repeat: no-repeat;
-    background-color: blue;
+    background-repeat: repeat;
     color: white;
     align-items: center;
     
@@ -50,9 +59,10 @@ header{
 
 
 .planetssection button{
-    border-radius: 20px;
+    border-radius: 10px;
     text-align: center;
     display: flex;
+    flex-direction: left;
     align-items: center;
 }
 .planetssection button:hover {
@@ -77,9 +87,8 @@ button:hover{
 table, th, td, tr{
     background-color: darkgreen;
     border-color: yellow;
-    border-radius: 30px;
+    border-radius: 3px;
     color: white;
-    text-align: center;
-    width: max-content;
+
 
 }
