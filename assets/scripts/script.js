@@ -10,7 +10,7 @@ let city = 'orem';
 let state = 'utah';
 
 async function getAPI() {
-    let request = 'https://api.openweathermap.org/data/2.5/forecast?q='+city+','+state+'&appid=KEYHERE';
+    let request = 'https://api.openweathermap.org/data/2.5/forecast?q='+city+','+state+'&appid=KEY';
 
     let fetchResult = await fetch(request);
 

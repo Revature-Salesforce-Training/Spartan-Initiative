@@ -131,10 +131,13 @@ footer a {
         width: 20%;
     }
     h1 {
-        font-size: 1rem;
+        font-size: 1.5rem;
     }
     h2 {
-        font-size: .5rem;
+        
+    }
+    .location {
+        transform: none;
     }
     .container {
         min-height: 50vh;
@@ -145,6 +148,7 @@ footer a {
     .forecast {
         flex-direction: column;
         bottom: 5%;
+        align-items: center;
     }
     th, td {
         padding: 0;
