@@ -131,9 +131,22 @@ footer a {
         width: 20%;
     }
     h1 {
-        font-size: 2rem;
+        font-size: 1rem;
+    }
+    h2 {
+        font-size: .5rem;
+    }
+    .container {
+        min-height: 50vh;
     }
     .daily {
       flex-direction: column;
+    }
+    .forecast {
+        flex-direction: column;
+        bottom: 5%;
+    }
+    th, td {
+        padding: 0;
     }
   }

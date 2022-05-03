@@ -13,9 +13,10 @@ async function getAPI() {
     let request = 'https://api.openweathermap.org/data/2.5/forecast?q='+city+','+state+'&appid=KEYHERE';
 
     let fetchResult = await fetch(request);
-    let receivedRequest = await fetchResult;
-    let finalresult = await receivedRequest.json();
+
     try {
+        let receivedRequest = await fetchResult;
+        let finalresult = await receivedRequest.json();
         build(finalresult);
         forecast(finalresult);
     } catch(e){
