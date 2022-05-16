@@ -8,6 +8,7 @@
     2. Logistics Support Specialists
 
 ## Security
+---
 ### Permission Abbreviations
 - C: Create
 - R: Read
@@ -51,3 +52,43 @@
 - **Trades:** RU
 - **Deliveries:** RUD
 - **Shipments:** RU
+
+## Sales Cloud
+---
+## Lead Assignments
+### Web-to-Lead
+- To Inside Broker Ag Queue if potential Ag client
+- To Inside Broker Distributor Queue if potential Distributor
+### Email-to-Lead
+- To Inside Broker Ag Queue if potential Ag client
+- To Inside Broker Distributor Queue if potential Distributor
+### Opportunity Path
+- Guided for inside sales and include celebratory effect
+### Products
+- transaction fees
+- logistics fees
+### Pricebooks
+- Discounted transaction fees for high volume accounts
+
+## Service Cloud
+---
+- 3 Assignment Rules
+- 3 Escalation Rules
+- 1 Web-to-Case
+
+## UI 
+---
+### Custom App with Custom Home Page
+- For Brokers
+- Object Record Types
+- One object-specific quick action
+- One global quick action
+
+## Process Automation
+### Flows
+- One of each Flow Type
+    - Interact w/ database
+    - Work with both single and bulk records
+
+## Reports & Dashboards
+- Use of both Standard & Custom Report Types
