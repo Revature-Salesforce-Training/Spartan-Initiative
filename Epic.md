@@ -1,11 +1,11 @@
 # Ag Market
 ## Organizational Overview
-1. Executive Broker
-    1. Inside Brokers
-    2. Outside Brokers
-2. Executive Support
-    1. Market Support Specialists
-    2. Logistics Support Specialists
+1. ~~Executive Broker~~
+    1. ~~Inside Brokers~~
+    2. ~~Outside Brokers~~
+2. ~~Executive Support~~
+    1. ~~Market Support Specialists~~
+    2. ~~Logistics Support Specialists~~
 
 ## Security
 ---
@@ -17,9 +17,9 @@
 - VA: View All
 - MA: Modify All
 ### General
-- **Accounts:** Can be viewed by anyone, except Outside Brokers unless they own the account.
-- **Opportunities:** Not accessible to anyone outside of the brokerage department, except for managers above owners in the role hierarchy.
-- **Orders:** Can be viewed by anyone in the Org
+- **Accounts:** ~~Can be viewed by anyone, except Outside Brokers unless they own the account.~~
+- **Opportunities:** ~~Not accessible to anyone outside of the brokerage department, except for managers above owners in the role hierarchy.~~
+- **Orders:** ~~Can be viewed by anyone in the Org~~
 - **Trades, Deliveries & Shipments:** RU to owners, managers above owners, and respective support department.
 ### Inside Brokers User Permissions
 - **Orers:** CRUD their own, CRU other Inside Brokers
