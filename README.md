@@ -1,1 +1,1 @@
-Test for seperate branch
+Welcome to Spartan-Initiative
