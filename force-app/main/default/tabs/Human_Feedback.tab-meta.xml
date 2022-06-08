@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomTab xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Custom Tab used to embed the Visualforce page displaying our YouTube Data API public comment response. Marketing users can access this page to view the most recent market sentiments from the human demographic related to the Droid Component and Cybernetic Enhancement Industries.</description>
+    <label>Human Feedback</label>
+    <motif>Custom10: Moon</motif>
+    <page>YouTubeScraperPage</page>
+</CustomTab>

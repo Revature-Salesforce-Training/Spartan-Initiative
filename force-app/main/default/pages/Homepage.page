@@ -1,0 +1,454 @@
+<apex:page sidebar="false" standardController="Contact" extensions="HomepageHelper">
+  <style> 
+    .background
+        {
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    background: url(https://wallpapercave.com/wp/wp4674827.jpg);
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+        
+        }
+    .hero {
+     position: relative;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+      text-align: center;
+}
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(https://getwallpapers.com/wallpaper/full/4/9/5/392108.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    filter: brightness(60%);
+}
+.hero-content {
+      position: relative; 
+    font-family: "Monserrat", sans-serif;
+    color: white;
+    text-align: center;
+    margin: 0.625rem;
+}
+      .hero-title {
+      
+    font-size: 3rem;
+    font-weight: 600;
+    margin-bottom: 0;
+}
+.hero-subtitle {
+    font-size: 2rem;
+    font-weight: 200;
+    margin-top: 1rem;
+}
+      .hero-button {
+    background-color:#233142;
+    color: black;
+    margin-top: 5rem;
+    padding: 0.9375rem 1.875rem;
+    font-family: "Monserrat", sans-serif;
+    font-size: 1.125rem;
+    font-weight: 200;
+    cursor: pointer;
+      border-radius: 12px;
+}
+.hero-button:hover {
+    background-color: #cb376a;
+    border: 1px solid #db7598;
+}
+      .container {
+    background-color: #fff;
+    color: #000;
+    font: normal 15px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+}
+  p {
+    line-height: 20px;
+    margin-bottom: 20px;
+}
+h6 {
+    font-family: 'Crete Round', serif;
+    font-weight: bold;
+    color: #444;
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+h7 {
+    font-weight: 300;
+    color: #444;
+    font-size: 55px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 20px;
+}
+h3 {
+    font-size: 30px;
+    color: #444;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 20px;
+}
+h4 {
+    font-size: 24px;
+    color: #444;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+h5 {
+    font-size: 15px;
+    color: #444;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+a {
+    text-decoration: none;
+    color: #444;
+}
+a:hover {
+    color: #02b8dd;
+}
+strong {
+    font-weight: bold;
+}
+small {
+    font-size: 13px;
+    color: #777;
+    font-style: italic;
+}
+.clear {
+    clear: both;
+}
+.wrapper {
+    margin: 0 auto;
+    padding: 0 10px;
+    width: 1040px;
+}
+      #features ul {
+    margin: 80px 0;
+      list-style:none;
+}
+#features ul li {
+    width: 300px;
+      height: 250px;
+    padding-top: 140px;
+    float: left;
+    margin-right: 10px;
+    text-align: center;
+      border-radius: 16px;
+}
+#features ul li.feature-1 {
+    background: url('https://images.hdqwalls.com/wallpapers/scifi-robot-police-4k-9d.jpg') no-repeat top center;
+    background-size: cover;
+}
+#features ul li.feature-2 {
+    background: url(https://cdnb.artstation.com/p/assets/images/images/022/877/151/large/leonardo-severini-pose.jpg?1577053252) no-repeat top center;
+    background-size: cover;
+}
+#features ul li.feature-3 {
+    background: url(https://wallpaperaccess.com/full/1581952.png) no-repeat top center;
+    background-size: cover;
+}
+      #primary-content {
+    background-color: #f8fafa;
+    padding: 60px 0;
+    text-align: center;
+}
+  .imgr {
+    border: 0;
+    width: 1056px;
+    height: auto;
+    border-radius: 18px;
+}
+#primary-content h3 {
+    display: block;
+    margin: 0 auto 20px auto;
+    width: 400px;
+    border-bottom: 1px solid #02b8dd;
+    padding: 0 0 20px 0;
+}
+#primary-content a img {
+    margin: 20px 0;
+}
+
+article h4 {
+    border-bottom: 1px solid #02b8dd;
+    padding-bottom: 20px;
+}
+.more-link {
+    border: 1px solid #02b8dd;
+    color: #02b8dd;
+    padding: 6px 20px;
+    border-radius: 3px;
+}
+.more-link:hover {
+    background-color: #02b8dd;
+    color: #fff;
+}
+      footer {
+    padding: 60px 0;
+    background-color: #f8fafa;
+}
+#footer-info {
+    width: 380px;
+    float: left;
+    margin-top: 10px;
+}
+#footer-links {
+    width: 520px;
+    float: right;
+}
+#footer-links ul {
+    width: 150px;
+    float: center;
+    margin-left: 20px;
+}
+#footer-links ul li {
+    margin: 10px 0;
+}
+      #cta {
+    padding: 60px 0;
+    text-align: center;
+}
+#cta h3 {
+    display: block;
+    margin: 0 auto 20px auto;
+    width: 400px;
+    border-bottom: 1px solid #02b8dd;
+    padding: 0 0 20px 0;
+}
+.button-2 {
+    display: block;
+    margin: 0 auto;
+    border: 2px solid #02b8dd;
+    color: #02b8dd;
+    border-radius: 3px;
+    width: 180px;
+    height: 50px;
+    font-size: 20px;
+    line-height: 50px;
+}
+.button-2:hover {
+    background-color: #02b8dd;
+    color: #fff;
+}
+  
+      
+      .containerfooter {
+  padding: 20px;
+}
+#savebutton {
+  color: #FFF
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box; 
+   
+      
+      }
+input[type=text] {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+ input[type=submit] {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  display: inline-block;
+  box-sizing: border-box;
+}
+
+input[type=checkbox] {
+  margin-top: 16px;
+}
+
+.buttonStyle { 
+width:100% !important;
+background-color:black !important;
+ color:white !important;
+text-align:center; 
+ padding-top: 8px !important;
+ padding-bottom: 8px !important;
+ }
+
+
+input[type=submit]:hover {
+  opacity: 0.8;
+}
+      
+      
+  
+        
+    
+    </style>
+    
+    <form>
+        <section class="hero">
+
+            
+       <div class="hero-content">
+    
+       <h1 class="hero-title">
+            Discover the Galaxy
+       </h1>
+         
+        <section>
+       <h2 class="hero-subtitle">
+            Our droids are built with the latest technology, allowing them to assist people in a variety of industries and settings. 
+       </h2>
+            </section>
+         
+       <button type="button" class="hero-button" onclick="location.href='tours.html'">
+            Order a Droid
+       </button>
+    
+    </div>
+
+</section>
+        
+        <section class="container">
+      <div id="primary-content">
+    <div class="wrapper">
+        <article>
+            <h3>A Bright Future</h3>
+            <p>The introduction of the robot has revolutionized the way we live, learn, and work. Robotic technology is set to play a vital role in the future of our planet. </p>
+         
+        </article>
+        <div id="features">
+    <div class="wrapper">
+        <ul>
+            <li class="feature-1">
+            </li>
+            <li class="feature-2">
+            </li>
+            <li class="feature-3">
+            </li>
+            <div class="clear"></div>
+        </ul>
+    </div>
+</div>
+        
+           <div id="features">
+    <div class="wrapper">
+        <ul>
+            <li class="feature-4">
+                <h4>Enforcer</h4>
+                <p>The new model police robot is designed to be the most versatile and easy to use law enforcement tool ever created. They serve as both a base line for all other police robots, and they protect the public from criminals, while also enforcing laws.</p>
+            </li>
+            <li class="feature-5">
+                <h4>Civilian</h4>
+                <p>These droids are a great solution for both the elderly and those with busy schedules, Droids are robots that can be programmed to help with everything from running errands and house cleaning, to assisting disabled patients.</p>
+            </li>
+            <li class="feature-6">
+                <h4>Military</h4>
+                <p>These military robots are used for war and combat missions, since these are the perfect things to use when you want to avoid putting humans at risk. These can also be used for maintance around bases and save soldiers time they could be using doing other important things.</p>
+            </li>
+            <div class="clear"></div>
+        </ul>
+    </div>
+</div>
+        
+        
+        
+    </div>
+</div>
+      
+            
+            <div id="primary-content">
+    <div class="wrapper">
+        <article>
+            <h3>See our droid in action</h3>
+            <p>The Droid is an autonomous robot that can be used to perform various tasks. It has a very flexible design, and can map its working area and perform simple object recognition as well as several advanced behaviors like attaching objects and following commands. </p>
+            <a href="#"><img src="https://i.imgur.com/o9n0rJ1.gif" alt="video placeholder" class="imgr" /></a>
+        </article>
+    </div>
+</div>
+            
+    
+   
+            
+            <div id="cta">
+    <div class="wrapper">
+        <h3>Heard Enough?</h3>
+        <p>Dragons are cool, but they're not real. They don't exist. Unicorns aren't real either. But Droids... Droids are a way of life. </p>
+        <a href="#" class="button-2">Reserve a Droid</a>
+    </div>
+</div>
+            
+       
+            
+            
+   <footer>
+      <div class="wrapper">
+          <div id="cta">
+            <p>
+                
+                APERTURE , est. 2533, is part of the Helghast federation and is licensed by the Board of Scientific Research. We manufacture humanoid robots for use in security and military operations, as well as domestic applications. Our products range from small-scale scouts which can be deployed in groups to perform reconnaissance on enemy positions or act as first responders during emergencies, to larger-scale industrial models designed for heavy duty work in manufacturing and construction."</p>
+            <p><a href="#">Terms of Service</a> || <a href="#">Records</a></p>
+          </div>
+          
+           
+
+<form action="/action_page.php">
+  <div id="cta">
+    <h2>Subscribe to our Network</h2>
+    <p>Our new Droids are arriving soon and we want to make sure you're the first to know. Subscribe to get product updates and be the first to receive our latest Droids!</p>
+  </div>
+
+  <div class="containerfooter">
+  
+  </div>
+</form>
+          
+          <apex:form >
+    <apex:pageBlock >
+   
+        <div class="containerfooter" style="background-color:white" >
+     <apex:inputField value="{!Contact.FirstName}" html-placeholder="First Name" />
+             <apex:inputField value="{!Contact.LastName}" html-placeholder="Last Name" required="false" />
+            <apex:inputField value="{!Contact.Phone}" html-placeholder="Phone Number" />
+    
+            
+            
+            <label>
+                
+       
+            </label>
+            </div>
+     
+
+    <div class="cta">
+       
+        
+ <apex:commandButton action="{!save}" value="Join Network" styleClass="buttonStyle" style="background:green"/>
+        
+        </div>
+    
+        
+        
+    </apex:pageBlock>
+
+   </apex:form>
+          
+       </div>
+    </footer>
+       
+  </section>    
+ </form>
+</apex:page>

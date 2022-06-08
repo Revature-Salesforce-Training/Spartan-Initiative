@@ -1,0 +1,30 @@
+<!--
+// Contact Us Visualforce Page
+// Matt McCain
+// Created Date 6/7/22
+// Modified Date 6/7/22
+// Custom Apex for Web-to-Lead and
+// generated Case-to-Lead
+-->
+
+<apex:page standardController="Case" lightningStyleSheets="true">
+
+<div style="margin-left: 10%">
+<h1>Service</h1>
+<br />
+      <apex:form id="w2Lead">
+          <apex:pageBlock title="Report an Issue:" mode="edit">
+              <apex:pageBlockButtons >
+                  <apex:commandButton value="Save" action="{!save}" />
+              </apex:pageBlockButtons>
+              <apex:pageBlockSection title="Report an issue:" columns="2">
+                <apex:inputField value="{!case.SuppliedName}" />
+                <apex:inputField value="{!case.SuppliedEmail}" />
+                <apex:inputField value="{!case.SuppliedPhone}" />
+                <apex:inputField value="{!case.Subject}" />
+                <apex:inputTextarea value="{!case.Description}" />
+              </apex:pageBlockSection>
+            </apex:pageBlock>
+      </apex:form>
+  </div>
+</apex:page>

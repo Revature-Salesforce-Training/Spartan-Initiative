@@ -1,0 +1,23 @@
+<!--
+  Reis Taylor 
+  Last Modified May 30th 
+  Page to display a specified number of the most recent YouTube Comments 
+-->
+<apex:page controller="YoutubeCommentMonitorController" lightningStylesheets="true">
+  <h1>Market Sentiment From Across the Republic</h1>
+    <apex:pageBlock title="Hear What Humans Are Saying About Our New Parts">
+      <apex:pageBlockSection >
+        <apex:pageBlockSectionItem >
+	      <apex:image url="{!$Resource.NineCustomizations}" width="1400" Height="300"/>
+        </apex:pageBlockSectionItem>
+      </apex:pageBlockSection>
+        <apex:form >
+          <apex:commandButton action="{!URLFOR($Action.Case.NewCase)}" value="Create a case"/>
+            <apex:pageBlock title="Ten Most Recent Comments For This Video">
+                <apex:dataList value="{!comments}" var="eachComment">
+                    <apex:outputText value="{!eachComment}"></apex:outputText>
+                </apex:dataList>
+            </apex:pageBlock>
+        </apex:form>
+    </apex:pageBlock>
+</apex:page>

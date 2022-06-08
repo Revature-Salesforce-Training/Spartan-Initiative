@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Corillia</fullName>
+        <default>false</default>
+        <label>Corillia</label>
+    </customValue>
+    <customValue>
+        <fullName>Jupiter</fullName>
+        <default>false</default>
+        <label>Jupiter</label>
+    </customValue>
+    <customValue>
+        <fullName>Kashyyyk</fullName>
+        <default>false</default>
+        <label>Kashyyyk</label>
+    </customValue>
+    <customValue>
+        <fullName>Reach</fullName>
+        <default>false</default>
+        <label>Reach</label>
+    </customValue>
+    <customValue>
+        <fullName>Earth</fullName>
+        <default>false</default>
+        <label>Earth</label>
+    </customValue>
+    <description>This picklist will allow the user to choose what planet they are from.</description>
+    <masterLabel>Planet</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

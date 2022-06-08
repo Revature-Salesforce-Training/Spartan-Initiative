@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Component__c</fullName>
+    <externalId>false</externalId>
+    <label>Component</label>
+    <required>true</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Locomotion Unit</fullName>
+                <default>false</default>
+                <label>Locomotion Unit</label>
+            </value>
+            <value>
+                <fullName>Motor</fullName>
+                <default>false</default>
+                <label>Motor</label>
+            </value>
+            <value>
+                <fullName>Power Source</fullName>
+                <default>false</default>
+                <label>Power Source</label>
+            </value>
+            <value>
+                <fullName>Limb</fullName>
+                <default>false</default>
+                <label>Limb</label>
+            </value>
+            <value>
+                <fullName>CPU and Processors</fullName>
+                <default>false</default>
+                <label>CPU and Processors</label>
+            </value>
+            <value>
+                <fullName>Armor</fullName>
+                <default>false</default>
+                <label>Armor</label>
+            </value>
+            <value>
+                <fullName>Weapons Accessories</fullName>
+                <default>false</default>
+                <label>Weapons Accessories</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

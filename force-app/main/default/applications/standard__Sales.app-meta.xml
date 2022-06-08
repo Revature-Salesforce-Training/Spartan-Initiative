@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomApplication xmlns="http://soap.sforce.com/2006/04/metadata">
+    <defaultLandingTab>standard-home</defaultLandingTab>
+    <isNavAutoTempTabsDisabled>false</isNavAutoTempTabsDisabled>
+    <isNavPersonalizationDisabled>false</isNavPersonalizationDisabled>
+    <tabs>standard-Chatter</tabs>
+    <tabs>standard-Campaign</tabs>
+    <tabs>standard-Lead</tabs>
+    <tabs>standard-Account</tabs>
+    <tabs>standard-Contact</tabs>
+    <tabs>standard-Opportunity</tabs>
+    <tabs>standard-Forecasting3</tabs>
+    <tabs>standard-Contract</tabs>
+    <tabs>standard-Order</tabs>
+    <tabs>standard-Invoice</tabs>
+    <tabs>standard-Case</tabs>
+    <tabs>standard-Solution</tabs>
+    <tabs>standard-Product2</tabs>
+    <tabs>standard-report</tabs>
+    <tabs>standard-Dashboard</tabs>
+    <tabs>Droid_Parts__c</tabs>
+    <tabs>Droid_Components__c</tabs>
+    <tabs>Droid__c</tabs>
+    <tabs>Transaction__c</tabs>
+    <tabs>Human_Feedback</tabs>
+    <tabs>Product_Page</tabs>
+    <tabs>Self_Registration</tabs>
+    <tabs>Q_A</tabs>
+    <tabs>Droid_Photo_Gallery</tabs>
+    <tabs>Contact_Us</tabs>
+    <tabs>Service</tabs>
+    <tabs>HomePage</tabs>
+</CustomApplication>

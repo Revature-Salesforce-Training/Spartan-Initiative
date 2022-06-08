@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Part_Price__c</fullName>
+    <description>The combined cost of pieces, shipping and labor  necessary to make the part</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Please enter the amount that it cost in both assembled pieces, shipping and labor to acquire the part.</inlineHelpText>
+    <label>Part Price</label>
+    <precision>18</precision>
+    <required>true</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

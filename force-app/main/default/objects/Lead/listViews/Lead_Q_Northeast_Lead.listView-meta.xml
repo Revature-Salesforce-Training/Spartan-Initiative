@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Lead_Q_Northeast_Lead</fullName>
+    <filterScope>Queue</filterScope>
+    <label>Lead Q Earth</label>
+    <queue>Lead_Q_Earth</queue>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+    </sharedTo>
+</ListView>

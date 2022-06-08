@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Droid_Part__c</fullName>
+    <externalId>false</externalId>
+    <label>Droid Part</label>
+    <referenceTo>Droid_Parts__c</referenceTo>
+    <relationshipLabel>Parts to Components Junc</relationshipLabel>
+    <relationshipName>Parts_to_Components_Junc</relationshipName>
+    <relationshipOrder>0</relationshipOrder>
+    <reparentableMasterDetail>false</reparentableMasterDetail>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MasterDetail</type>
+    <writeRequiresMasterRead>false</writeRequiresMasterRead>
+</CustomField>

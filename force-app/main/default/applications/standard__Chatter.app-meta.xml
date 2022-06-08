@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomApplication xmlns="http://soap.sforce.com/2006/04/metadata">
+    <defaultLandingTab>standard-home</defaultLandingTab>
+    <formFactors>Large</formFactors>
+    <isNavAutoTempTabsDisabled>false</isNavAutoTempTabsDisabled>
+    <isNavPersonalizationDisabled>false</isNavPersonalizationDisabled>
+    <tabs>standard-Chatter</tabs>
+    <tabs>standard-UserProfile</tabs>
+    <tabs>standard-OtherUserProfile</tabs>
+    <tabs>standard-CollaborationGroup</tabs>
+    <tabs>standard-File</tabs>
+    <tabs>Droid_Parts__c</tabs>
+    <tabs>Droid_Components__c</tabs>
+    <tabs>Droid__c</tabs>
+    <tabs>Transaction__c</tabs>
+    <tabs>Human_Feedback</tabs>
+    <tabs>Product_Page</tabs>
+    <tabs>Self_Registration</tabs>
+    <tabs>Q_A</tabs>
+    <tabs>Droid_Photo_Gallery</tabs>
+    <tabs>Contact_Us</tabs>
+    <tabs>Service</tabs>
+    <tabs>HomePage</tabs>
+</CustomApplication>

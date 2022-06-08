@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AutoResponseRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <autoResponseRule>
+        <fullName>Planet</fullName>
+        <active>true</active>
+        <ruleEntry>
+            <criteriaItems>
+                <field>Lead.Planet__c</field>
+                <operation>equals</operation>
+                <value>Corillia</value>
+            </criteriaItems>
+            <senderEmail>mmccain814@gmail.com</senderEmail>
+            <senderName>Samir Kalouf</senderName>
+            <template>unfiled$public/SalesNewCustomerEmail</template>
+        </ruleEntry>
+        <ruleEntry>
+            <criteriaItems>
+                <field>Lead.Planet__c</field>
+                <operation>equals</operation>
+                <value>Jupiter</value>
+            </criteriaItems>
+            <senderEmail>mmccain814@gmail.com</senderEmail>
+            <senderName>Samir Kalouf</senderName>
+            <template>unfiled$public/SalesNewCustomerEmail</template>
+        </ruleEntry>
+        <ruleEntry>
+            <criteriaItems>
+                <field>Lead.Planet__c</field>
+                <operation>equals</operation>
+                <value>Kashyyyk</value>
+            </criteriaItems>
+            <senderEmail>mmccain814@gmail.com</senderEmail>
+            <senderName>Samir Kalouf</senderName>
+            <template>unfiled$public/SalesNewCustomerEmail</template>
+        </ruleEntry>
+        <ruleEntry>
+            <criteriaItems>
+                <field>Lead.Planet__c</field>
+                <operation>equals</operation>
+                <value>Reach</value>
+            </criteriaItems>
+            <senderEmail>mmccain814@gmail.com</senderEmail>
+            <senderName>Samir Kalouf</senderName>
+            <template>unfiled$public/SalesNewCustomerEmail</template>
+        </ruleEntry>
+        <ruleEntry>
+            <criteriaItems>
+                <field>Lead.Planet__c</field>
+                <operation>equals</operation>
+                <value>Earth</value>
+            </criteriaItems>
+            <senderEmail>mmccain814@gmail.com</senderEmail>
+            <senderName>Samir Kalouf</senderName>
+            <template>unfiled$public/SalesNewCustomerEmail</template>
+        </ruleEntry>
+    </autoResponseRule>
+</AutoResponseRules>

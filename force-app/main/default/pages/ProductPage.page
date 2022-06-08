@@ -1,0 +1,37 @@
+<!--
+ Author: Trenton Teasdale
+  Last Modified: 6/7/22
+	trigger for platform events
+-->
+
+<apex:page label="Product Page" lightningStylesheets="true" controller="ProductController">
+    <head>
+            <apex:slds />
+    </head>
+    <apex:pageBlock >
+                    <!--Header for product page-->
+        <h1 class="slds-text-heading_large slds-text-align_center " style="padding: 1rem;">
+            All Aperture Droids
+        </h1>
+        <div class="slds-m-left_x-large slds-m-right_x-large">
+            <!--Start of table-->
+        <apex:pageBlockTable value="{! products }" var="pt" style="border: 1px solid lightgray;">
+            <apex:column headerValue="Droids" style="text-align:center;" headerClass="slds-text-align_center">
+                
+                <!--Column for all names with links to record pages-->
+                <apex:outputLink value="/{!pt.Id}">{!pt.Name}
+                </apex:outputLink>
+                
+            </apex:column>
+			
+            <!--Column for all prices-->
+            <apex:column value="{! pt.Total_Price__c }" style="text-align:center;" headerClass="slds-text-align_center">
+            </apex:column>
+            <apex:column headerValue="View Image" style="text-align:center;" headerClass="slds-text-align_center">
+                <a href="{!pt.Image__c}"> View {!pt.Name} Here
+                </a>
+            </apex:column>
+</apex:pageBlockTable>
+            </div>
+    </apex:pageBlock>
+</apex:page>

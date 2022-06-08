@@ -1,0 +1,38 @@
+<!-- 
+DroidPhotoGallery.vfp
+Samir Kalouf
+Created Date: 06-05-2022
+Last Modified: 06-06-2022
+This is a visualforce page that displays pictures of the droids our company as for sale.
+-->
+
+<apex:page lightningStylesheets="true" sidebar="false">
+    <apex:form >
+        <h1 style="text-align:center;color:blue;">
+            The Droid Gallery
+        </h1>
+            <apex:pageBlock >
+       <apex:pageBlockSection >
+           <apex:pageBlockSectionItem >
+                <apex:commandButton title="Astromech" image="{!URLFOR($Resource.Astromech)}"/>  
+           </apex:pageBlockSectionItem> 
+           <apex:pageBlockSectionItem >
+           	   <apex:commandButton title="Battle Droid" image="{!URLFOR($Resource.BattleDroid)}"/>
+           </apex:pageBlockSectionItem>
+           <apex:pageBlockSectionItem >
+           	   <apex:commandButton title="HK-55" image="{!URLFOR($Resource.YellowDroid)}"/>
+           </apex:pageBlockSectionItem>
+           <apex:pageBlockSectionItem >
+           	   <apex:commandButton title="Super Battle Droid" image="{!URLFOR($Resource.SuperBattleDroid)}"/>
+           </apex:pageBlockSectionItem>
+           <apex:pageBlockSectionItem >
+           	   <apex:commandButton title="Mouse Droid" image="{!URLFOR($Resource.MouseDroid)}"/>
+           </apex:pageBlockSectionItem>
+           <apex:pageBlockSectionItem >
+           	   <apex:commandButton title="C-3PO" image="{!URLFOR($Resource.C3PO)}"/>
+           </apex:pageBlockSectionItem>
+        </apex:pageBlockSection>
+    </apex:pageBlock>    
+    </apex:form>
+    
+</apex:page>

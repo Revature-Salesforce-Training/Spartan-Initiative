@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Hand</fullName>
+        <default>false</default>
+        <label>Hand</label>
+    </customValue>
+    <customValue>
+        <fullName>Arm</fullName>
+        <default>false</default>
+        <label>Arm</label>
+    </customValue>
+    <customValue>
+        <fullName>Leg</fullName>
+        <default>false</default>
+        <label>Leg</label>
+    </customValue>
+    <customValue>
+        <fullName>Motor</fullName>
+        <default>false</default>
+        <label>Motor</label>
+    </customValue>
+    <customValue>
+        <fullName>Head</fullName>
+        <default>false</default>
+        <label>Head</label>
+    </customValue>
+    <customValue>
+        <fullName>Torso</fullName>
+        <default>false</default>
+        <label>Torso</label>
+    </customValue>
+    <customValue>
+        <fullName>Foot</fullName>
+        <default>false</default>
+        <label>Foot</label>
+    </customValue>
+    <masterLabel>Component List</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Species__c</fullName>
+    <description>Datapoint to provide market insights related to trends, customer preferences, and more!</description>
+    <externalId>false</externalId>
+    <label>Species</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Human,</fullName>
+                <default>true</default>
+                <label>Human,</label>
+            </value>
+            <value>
+                <fullName>Wookie,</fullName>
+                <default>false</default>
+                <label>Wookie,</label>
+            </value>
+            <value>
+                <fullName>Hutt,</fullName>
+                <default>false</default>
+                <label>Hutt,</label>
+            </value>
+            <value>
+                <fullName>Chagrian,</fullName>
+                <default>false</default>
+                <label>Chagrian,</label>
+            </value>
+            <value>
+                <fullName>Togruta,</fullName>
+                <default>false</default>
+                <label>Togruta,</label>
+            </value>
+            <value>
+                <fullName>Zabrak/Dathomirian,</fullName>
+                <default>false</default>
+                <label>Zabrak/Dathomirian,</label>
+            </value>
+            <value>
+                <fullName>Pau&apos;an,</fullName>
+                <default>false</default>
+                <label>Pau&apos;an,</label>
+            </value>
+            <value>
+                <fullName>Sith,</fullName>
+                <default>false</default>
+                <label>Sith,</label>
+            </value>
+            <value>
+                <fullName>Whatever Yoda is,</fullName>
+                <default>false</default>
+                <label>Whatever Yoda is,</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

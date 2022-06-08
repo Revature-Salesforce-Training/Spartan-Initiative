@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RemoteSiteSetting xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>The base URL is Google&apos;s YouTube Data API. Appended is the required key-value pairs necessary for authentication and requesting public comment data.</description>
+    <disableProtocolSecurity>false</disableProtocolSecurity>
+    <isActive>true</isActive>
+    <url>https://www.googleapis.com</url>
+</RemoteSiteSetting>

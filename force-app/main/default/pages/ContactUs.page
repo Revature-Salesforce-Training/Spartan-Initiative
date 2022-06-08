@@ -1,0 +1,33 @@
+<!--
+// Contact Us Visualforce Page
+// Matt McCain
+// Created Date 6/6/22
+// Modified Date 6/7/22
+// Custom Apex for Web-to-Lead and
+// generated Case-to-Lead
+-->
+
+<apex:page standardController="Lead" extensions="WebLead_Controller" lightningStyleSheets="true">
+
+<div style="margin-left: 10%">
+<h1>Contact Us</h1>
+<br />
+      <apex:form id="w2Lead">
+          <apex:pageBlock title="New Customer" mode="edit">
+              <apex:pageBlockButtons >
+                  <apex:commandButton value="Save" action="{!save}" />
+              </apex:pageBlockButtons>
+              <apex:pageBlockSection title="Enter Info:" columns="2">
+                <apex:inputField value="{!lead.firstName}" />
+                <apex:inputField value="{!lead.lastName}" />
+                <apex:inputField value="{!lead.email}" />
+                <apex:inputField value="{!lead.company}" />
+                <apex:inputField value="{!lead.city}" />
+                <apex:inputField value="{!lead.state}" />
+                <apex:selectRadio value="{!lead.RecordTypeId}" />
+                  <apex:selectOptions value="{!ourTypes}" />
+              </apex:pageBlockSection>
+            </apex:pageBlock>
+      </apex:form>
+  </div>
+</apex:page>
