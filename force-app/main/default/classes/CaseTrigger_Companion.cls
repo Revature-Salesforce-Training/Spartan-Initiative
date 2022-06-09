@@ -1,6 +1,8 @@
 /**
 * Reis Taylor
 * Last Modified 6/7/2022
+* Trigger Handler logic to dynamically populate the Warranty Summary
+* Field visible on the Case Layout
 */
 
 public with sharing class CaseTrigger_Companion {
@@ -26,7 +28,7 @@ public with sharing class CaseTrigger_Companion {
                                     + 'This case was created on ' 
                                     +  createdDate + ' '  +
                                     +  myCase.Product__c  + ' was purchased on ' 
-                                    +  purchaseDate       + ', Standard Earth Time-Space.'
+                                    +  purchaseDate       + ', Standard Earth Time-Space. '
                                     + 'The warranty has ' + warrantyPercentage + '% power level remaining.';
         System.debug(myCase.Warranty_Summary__c);
         }        
