@@ -1,18 +1,17 @@
-# Salesforce DX Project: Next Steps
+# Aperture
+# Project Description
+**APERTURE , est. 2533, is part of the Helghast federation and is licensed by the Board of Scientific Research. We manufacture humanoid robots for use in security and military operations, as well as domestic applications. Our products range from small-scale scouts which can be deployed in groups to perform reconnaissance on enemy positions or act as first responders during emergencies, to larger-scale industrial models designed for heavy duty work in manufacturing and construction.**
 
-Now that you’ve created a Salesforce DX project, what’s next? Here are some documentation resources to get you started.
 
-## How Do You Plan to Deploy Your Changes?
+![183](https://user-images.githubusercontent.com/74889517/172876964-b144cbcb-6ad1-45ff-a57f-52a0f924a222.jpg)
+![182](https://user-images.githubusercontent.com/74889517/172879274-f382a757-98eb-4ec5-945f-0567ad9f114e.jpg)
 
-Do you want to deploy a set of changes, or create a self-contained application? Choose a [development model](https://developer.salesforce.com/tools/vscode/en/user-guide/development-models).
-
-## Configure Your Salesforce DX Project
-
-The `sfdx-project.json` file contains useful configuration information for your project. See [Salesforce DX Project Configuration](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_ws_config.htm) in the _Salesforce DX Developer Guide_ for details about this file.
-
-## Read All About It
-
-- [Salesforce Extensions Documentation](https://developer.salesforce.com/tools/vscode/)
-- [Salesforce CLI Setup Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_setup.meta/sfdx_setup/sfdx_setup_intro.htm)
-- [Salesforce DX Developer Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_intro.htm)
-- [Salesforce CLI Command Reference](https://developer.salesforce.com/docs/atlas.en-us.sfdx_cli_reference.meta/sfdx_cli_reference/cli_reference.htm)
+# Project Resources
+> Experience Cloud & Visualforce
+```
+git
+html
+Css
+```
+# Aperture Quote
+**Dragons are cool, but they're not real. They don't exist. Unicorns aren't real either. But Droids... Droids are a way of life.**
