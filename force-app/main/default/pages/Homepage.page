@@ -1,3 +1,5 @@
+<!-- Author: Charles -->
+
 <apex:page sidebar="false" standardController="Contact" extensions="HomepageHelper">
   <style> 
     .background
