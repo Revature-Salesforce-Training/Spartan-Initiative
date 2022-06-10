@@ -1,0 +1,17 @@
+// Charles 
+
+
+trigger Homepage on Contact (before insert) {
+
+    
+    if(Trigger.isBefore) {
+        for(Contact c : Trigger.New) {
+            
+            if(c.Description.contains('subscribed to our network to get updates')){
+         c.Title = 'Prospect';
+         break;
+                
+         }
+       }
+     }
+   }
