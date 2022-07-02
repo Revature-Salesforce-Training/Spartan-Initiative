@@ -32,8 +32,11 @@ body {
 	line-height: 1;
     background-color: #0093E9;
     background-image: linear-gradient(190deg, #0093E9 0%, #80D0C7 100%);
+    color: white;
     height:100vh;
     font-family: monospace;
+    font-size: 1rem;
+    font-weight: 600;
     overflow: hidden;
 }
 ol, ul {
@@ -54,9 +57,8 @@ table {
 header {
     display: flex;
     align-items: center;
-    position: absolute;
-    width: 100%;
     justify-content: space-between;
+    padding: 1rem;
 }
 header img {
     width: 15%;
@@ -73,13 +75,12 @@ h2 {
     font-size: 1rem;
 }
 .location {
-    transform: translateX(-10px);
+    
 }
 .container{
     display: flex;
     align-items: center;
     text-align: center;
-    justify-content: center;
     min-height: 100vh;
     flex-direction: column;
 }
@@ -88,6 +89,10 @@ h2 {
     align-items: center;
     justify-content: space-around;
     width: 100%;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 .forecast {
     display: flex;
@@ -104,20 +109,28 @@ h2 {
 }
 th, td {
     padding: .5rem;
-    border: 1px solid black;
+    border: 1px solid white;
 }
 #date, #temp, #feel {
     font-size: 1rem;
 }
-input{
-    width: 100px;
+input, select,button{
+    width: 140px;
+    padding: 5px 10px;
+    margin: 5px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    color: darkslategrey;
+    font-weight: 600;
 }
 footer{
     position: absolute;
     bottom: 0;
     width: 100%;
     background-color: #0093E9;
-    height: 2rem;
+    height: 3rem;
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -136,19 +149,36 @@ footer a {
     h2 {
         
     }
+    .left {
+        display: flex;
+        align-self: flex-start;
+        padding-top: 20px;
+    }
     .location {
-        transform: none;
+        display: flex;
+        flex-direction: column;
     }
     .container {
         min-height: 50vh;
     }
     .daily {
       flex-direction: column;
+      top: 30%;
+    }
+    .dayInfo .currentInfo {
+        padding: 1rem;
     }
     .forecast {
         flex-direction: column;
         bottom: 5%;
         align-items: center;
+    }
+    .currentInfo {
+        font-size: 1rem;
+        padding: 0 .5rem;
+    }
+    .currentInfo img {
+        width: 75%;
     }
     th, td {
         padding: 0;

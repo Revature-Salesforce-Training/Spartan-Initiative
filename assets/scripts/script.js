@@ -1,16 +1,16 @@
 // Author: Trenton Teasdale
 // Created: 4/27/22
-// Last Modified: 5/2/22
-// This an a weather API able to show todays weather
+// Last Modified: 6/1/22
+// This an a weather API able to show todays weather and 4 day forecast
 
 //Begin fetch for weather API
 //aebe658949ac3fc12a2499a950e9c91a
 
-let city = 'orem';
+let city = 'Orem';
 let state = 'utah';
 
 async function getAPI() {
-    let request = 'https://api.openweathermap.org/data/2.5/forecast?q='+city+','+state+'&appid=KEY';
+    let request = 'https://api.openweathermap.org/data/2.5/forecast?q='+city+','+state+'&appid=aebe658949ac3fc12a2499a950e9c91a';
 
     let fetchResult = await fetch(request);
 
@@ -27,6 +27,7 @@ async function getAPI() {
 getAPI();
 
 function build(info) {
+    console.log(info);
     data= info.list[0];
         console.log(data);
         //add city name
