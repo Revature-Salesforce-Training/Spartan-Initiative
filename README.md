@@ -4,7 +4,7 @@ Due: 5/3
 
 Requirements 
 GIT
-Github repo that contains braches for invididual work -- COMPLETE
+Github repo that contains braches for invididual work
 
 SDLC
 maintain a Scrumban workflow - daily standups 
@@ -13,7 +13,7 @@ Kanban board that tracks tasks and progress of project
 Maintain standup notes on branches and feature their notes from every standup
 
 WireFrames 
-Before beginning work - create a wireframe mockup of webpage and upload it to to your branch - COMPLETE
+Before beginning work - create a wireframe mockup of webpage and upload it to to your branch
 
 HTML
 Create a well formed HTML page that illustrates understandng of elements, tags, and attributes
